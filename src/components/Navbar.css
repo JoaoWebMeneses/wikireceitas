@@ -1,0 +1,19 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+    text-decoration:none;
+}
+#input{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+#wikireceitas{
+    margin-left: 20px;
+    color: white;
+    transition: 0.5s;
+}
+#wikireceitas:hover{
+    font-size: 160%;
+}
