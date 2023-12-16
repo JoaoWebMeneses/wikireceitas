@@ -9,10 +9,6 @@ const firebaseApp = initializeApp({
 })
 
 const Home = () => {
-    const [ingredientes, setIngredientes] = useState("");
-    const [preparo, setPreparo] = useState("");
-    const [titulo, setTitulo] = useState("");
-    const [url, setUrl] = useState("");
     const [receitas, setReceitas] = useState([]);
 
     const db = getFirestore(firebaseApp);
@@ -27,14 +23,14 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="receita">
+        <div className="receitas">
             {receitas.map((receita) => {
                     return(
                         <div className="receita" id>
                             <h1>{receita.titulo}</h1>
                             <img src={receita.url}></img>
-                            <h3>Modo de preparo: <br/>{receita.ingredientes}</h3>
-                            <p>{receita.preparo}</p>
+                            <h3>Ingredientes: <br/>{receita.ingredientes}</h3>
+                            <h3>Modo de preparo: <br/>{receita.preparo}</h3>
                         </div>
                     )
             })}

@@ -1,14 +1,14 @@
 * {
   text-align: center;
-  margin-left: 0;
-  margin-right: 0;
 }
 
 img{
-  width: 200px;
+  width: 50%;
 }
 
 .receita{
-  margin-left: 0;
-  margin-right: 0;
+  width: 70%;
+  margin: 0 auto;
+  border: 1px solid black;
+  margin-top: 10px;
 }
